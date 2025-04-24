@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="C:\Users\Giovana\css pet lover.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>PetLover</h1>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+    <nav>
+        <a href="index.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a href="register.html"><i class="fas fa-user-plus"></i>Cadastrar</a>
+    </nav>
+    <div class="container">
+        <h2>Entrar</h2>
+        <form action="home.html">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Login</button>
+            <p><a href="register.html">Não tem conta? Cadastre-se</a></p>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="C:\Users\Giovana\css pet lover.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+    <nav>
+        <a href="index.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a href="register.html"><i class="fas fa-user-plus"></i>Cadastrar</a>
+    </nav>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form action="home.html">
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <input type="text" placeholder="Nome do Pet" required>
+            <input type="text" placeholder="Espécie (cachorro, gato, cavalo, etc.)" required>
+            <input type="text" placeholder="Raça" required>
+            <input type="number" placeholder="Idade do Pet" required>
+            <input type="text" placeholder="Peso (kg)" required>
+            <label class="upload-label">
+                <i class="fas fa-camera"></i> Foto do Pet
+                <input type="file" accept="image/*">
+            </label>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pets</title>
+    <link rel="stylesheet" href="C:\Users\Giovana\css pet lover.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+    <nav>
+        <a href="home.html"><i class="fas fa-paw"></i>Pets</a>
+        <a href="chat.html"><i class="fas fa-comments"></i>Chat</a>
+        <a href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </nav>
+    <div class="container">
+        <h2>Encontre um MATCH</h2>
+        <div class="pet-grid">
+            <div class="pet-card">
+                 <h3>Thor</h3>
+                <p>Golden Retriever, 3 anos</p>
+                <img src="C:\Users\Giovana\Downloads\golden.jpg" alt="Pet 1">
+                <button class="like-btn"></button>
+            </div>
+
+            <div class="pet-card">
+                <h3>Luna</h3>
+                <p>Shih-tzu, 2 anos</p>
+                <img src="C:\Users\Giovana\Downloads\Dogue_alemao.webp" alt="Pet 2">
+                <button class="like-btn"></button>
+            </div>
+            <div class="pet-card">
+                <h3>Max</h3>
+                <p>Bulldog Francês, 4 anos</p>
+                <img src="C:\Users\Giovana\Downloads\A_French_Bulldog.jpg" alt="Pet 3">
+                <button class="like-btn"></button>
+            </div>
+            <div class="pet-card">
+                <h3>Mel</h3>
+                <p>Poodle, 1 ano</p>
+                <img src="C:\Users\Giovana\Downloads\bea6ab95c91203ba53975dd2d6b46052.jpg" alt="Pet 4">
+                <button class="like-btn"></button>
+            </div>
+        </div>
+    </div>
+    <div class="match-popup" id="matchPopup">
+        <div class="match-content">
+            <h2>Vocês deram MATCH!</h2>
+            <p>Agora vocês podem conversar no chat.</p>
+            <a href="chat.html" class="chat-link">Ir para o Chat</a>
+        </div>
+    </div>
+    <script>
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="C:\Users\Giovana\css pet lover.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+    <nav>
+        <a href="home.html"><i class="fas fa-paw"></i>Pets</a>
+        <a href="chat.html"><i class="fas fa-comments"></i>Chat</a>
+        <a href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </nav>
+    <div class="container chat-container">
+        <h2>Você deu match com Luna!</h2>
+        <div class="chat-box">
+            <div class="message received">Oi! Tudo bem?</div>
+            <div class="message sent">Tudo ótimo! E você?</div>
+            <div class="message received">Também! A Luna adorou o Thor!</div>
+        </div>
+        <form class="chat-input">
+            <input type="text" placeholder="Digite uma mensagem...">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
